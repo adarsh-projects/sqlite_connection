@@ -34,7 +34,9 @@ public class user_interface {
 					System.out.println("Your Database is Empty!");
 				}else {
 					while( rs.next() ) {
-						System.out.println(rs.getString("movies_name"));
+						System.out.println(" Movie Name: "+rs.getString("movies_name")+"\n Actor Name: "+rs.getString("actor_name")+"\n Actress Name "+rs.getString("actress_name")
+						+"\n Director Name: "+rs.getString("director_name")+"\n Year Of Realease: "+rs.getString("year_of_release"));
+						System.out.println("\n");
 					}
 				}
 			
@@ -47,7 +49,9 @@ public class user_interface {
 					System.out.println("Your Database does not have any movie of "+actor_name);
 				}else {
 					while( rs.next() ) {
-						System.out.println(rs.getString("movies_name"));
+						System.out.println(" Movie Name: "+rs.getString("movies_name")+"\n Actor Name: "+rs.getString("actor_name")+"\n Actress Name "+rs.getString("actress_name")
+						+"\n Director Name: "+rs.getString("director_name")+"\n Year Of Realease: "+rs.getString("year_of_release"));
+						System.out.println("\n");
 					}
 				}
 				
